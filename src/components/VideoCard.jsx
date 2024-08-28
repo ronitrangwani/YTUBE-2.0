@@ -21,7 +21,7 @@ const VideoCard = ({
     sx={{
       width: { xs: "100%", sm: "358px", md: "320px" },
       boxShadow: "none",
-      borderRadius: 0,
+      borderRadius: "4%",
     }}
   >
     <Link to={videoId ? `/video/${videoId}` : `/video/cV2gBU6hKfY`}>
@@ -31,9 +31,9 @@ const VideoCard = ({
         sx={{ width: { xs: "100%", sm: "358px" }, height: 180 }}
       />
     </Link>
-    <CardContent sx={{ backgroundColor: "#1E1E1E", height: "106px" }}>
+    <CardContent sx={{ backgroundColor: "#ffe8e7", height: "80px" }}>
       <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
-        <Typography variant="subtitle1" fontWeight="bold" color="#FFF">
+        <Typography variant="subtitle1" fontWeight="bold" color="gray">
           {snippet?.title.slice(0, 60) || demoVideoTitle.slice(0, 60)}
         </Typography>
       </Link>
