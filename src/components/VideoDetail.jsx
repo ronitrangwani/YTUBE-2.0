@@ -32,8 +32,14 @@ const VideoDetail = () => {
   return (
     <Box minHeight="95vh">
       <Stack direction={{ xs: "column", md: "row" }}>
-        <Box flex={1}>
-          <Box sx={{ width: "100%", position: "sticky", top: "86px" }}>
+        <Box flex={1} sx={{ borderRadius: "4%" }}>
+          <Box
+            sx={{
+              width: "100%",
+              position: "sticky",
+              top: "86px",
+            }}
+          >
             <ReactPlayer
               url={`https://www.youtube.com/watch?v=${id}`}
               className="react-player"
